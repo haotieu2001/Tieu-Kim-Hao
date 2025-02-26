@@ -6,6 +6,7 @@ Building a highly available, scalable, and cost-effective trading system require
 ---
 
 ## Architecture
+![Diagram](https://github.com/haotieu2001/Tieu-Kim-Hao/blob/main/489b5e0a-a892-4e63-998a-00fa1bff3f99.jpg)
 ### Overview of AWS Services and Alternatives Considered
 Below is a breakdown of why each AWS service was chosen and the alternatives that were considered.
 
