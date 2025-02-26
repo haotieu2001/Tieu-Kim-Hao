@@ -88,7 +88,16 @@ Below is a breakdown of why each AWS service was chosen and the alternatives tha
 🔄 **Alternatives Considered:**
 - **HashiCorp Vault** → Great for multi-cloud but harder AWS integration.
 - **SSM Parameter Store** → Cheaper than Secrets Manager but less feature-rich.
-
+- 
+### 9️⃣ Monitoring & Observability (Prometheus, Grafana, CloudWatch)
+✅ **Why Use It?**
+- Prometheus & Grafana (Deployed on EKS) → Collects and visualizes real-time metrics for backend services, helping track system health and performance.
+- AWS CloudWatch → Monitors AWS infrastructure (EKS, RDS, ElastiCache, SQS, etc.), providing logs, metrics, and alarms.
+- AWS X-Ray → Distributed tracing to analyze request latency across microservices.
+- Loki (for logs) → Centralized logging for EKS workloads, integrated with Grafana for log analysis.
+🔄 **Alternatives Considered:**
+- Datadog / New Relic → Fully managed observability solutions but expensive.
+- ELK Stack (Elasticsearch, Logstash, Kibana) → Powerful but requires self-hosting and maintenance.
 ---
 
 ## Scaling Strategies
